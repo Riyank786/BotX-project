@@ -1,0 +1,135 @@
+body{
+    margin:0%;
+    padding: 0%;
+    
+    background-image: url('assests/signUpBG.png');
+    background-repeat: no-repeat;
+    background-size:100% 100vh;
+    
+    font-family: system-ui;
+    
+}   
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary:#FA9746;
+}
+
+.wrapper{
+    width: 444px;
+    
+    position: absolute;
+    top: 17%;
+    right: 13%;
+}
+
+#signupForm, #loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:0.5rem;
+    width: 100%;
+    font-size: 1.2rem;
+    color: rgba(128, 128, 128, 0.781);
+    transition: .5s all;
+}
+
+#signupForm .switch-form, #loginForm .switch-form{
+    font-size: 1rem;
+    margin:1.7rem auto;
+    margin-bottom: 0;
+}
+#signupForm .switch-form a, #loginForm .switch-form a{
+    color: var(--primary);
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+
+#signupBTN{
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    font-size: 1.5rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 28px 8px -20px rgba(255, 166, 0, 0.719);
+}
+#signupBTN:hover{
+    box-shadow: none;
+    transform: scale(0.95);
+}
+
+.input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.267);
+    width: 100%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: grey;
+    height: 1.5rem;
+    margin-bottom: 6vh;
+}
+.input:focus{
+    border-bottom: 3px solid var(--primary);
+    height: 3.2rem;
+    font-size: 1.2rem;
+}
+
+
+#loginForm{
+    display: none;
+}
+
+#pass-rem-for{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+    margin-top: -1.5rem;
+}
+
+#forgot{
+    margin: 0;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+@media (max-width:1240px) {
+    .wrapper{
+        width: 333px;
+        right: 10%;
+    }
+}
+
+
+@media (max-width : 850px) {
+    body{
+        background-size:100% 40vh;
+    }
+}
+
+@media (max-width : 635px) {
+    body{
+        background-size:100% 30vh;
+    }
+}
+
+@media (max-width : 580px) {
+    body{
+        background-size:100% 20vh;
+    }
+    .wrapper{
+        width: 100%;
+        right: 0%;
+        top: 22%;
+    }
+}

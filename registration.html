@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="signup.css">
+
+    <title>BotX - Registration</title>
+</head>
+<body>
+    
+
+    <div class="wrapper">
+
+        <!-- signup form  -->
+        <form id="signupForm">
+            <label for="email" id="emailLabel">Email</label>
+            <input class="input" type="text" id="email" name="email" autocomplete="off" required>
+            <label for="username">Username</label>
+            <input class="input" type="text" id="username" name="username" autocomplete="off" required>
+            <label for="password" id="passLabel">Password</label>
+            <input class="input" type="password" id="password" name="password" required>
+            <label for="con-password">Confirm Password</label>
+            <input class="input" type="password" id="con-password" name="con-password" required>
+
+            <button id="signupBTN">Sign up</button>
+            <p class="switch-form">Already have an account? <a onclick="goToLogin()">Log In</a></p>
+        </form>
+
+        <!-- login form -->
+        <form id="loginForm">
+            <label for="lnEmail" id="emailLabel">Email</label>
+            <input class="input" type="text" id="lnEmail" name="email" autocomplete="off" required>
+            <label for="lnPassword" id="passLabel">Password</label>
+            <input class="input" type="password" id="lnPassword" name="password" required>
+
+            <div id="pass-rem-for">
+                <div id="rem-control">
+                    <input type="checkbox" id="remember" name="remember" value="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <p id="forgot">Forgot password?</p>
+            </div>
+
+            <button id="signupBTN">Log in</button>
+            <p class="switch-form">Don't have an account? <a onclick="goToSignUp()">Create an account</a></p>
+        </form>
+
+
+    </div>
+
+
+    <script>
+
+        let login = document.getElementById('loginForm');
+        let signup = document.getElementById('signupForm');
+
+        function goToLogin(){
+            login.style.display = 'flex';
+            signup.style.display = 'none';
+        }
+
+        function goToSignUp(){
+            signup.style.display = 'flex';
+            login.style.display = 'none';
+        }
+
+    </script>
+
+</body>
+</html>
