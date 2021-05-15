@@ -335,16 +335,35 @@ body{
     .home{
         padding-bottom: 5rem;
     }
-    #side-img-cont{
+    /* #side-img-cont{
         display: none;
-    }
-    #home-description{
+    } */
+    /* #home-description{
         width: 100%;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
+    } */
+
+    .intro{
+        padding: 4rem 3rem;
     }
+
+    #home-description h1{
+        font-size:2rem;
+        margin: 0;
+    }
+
+    #home-description p{
+        font-size: 1rem;
+        color: #4E4E4E;
+        font-weight: 600;
+        margin: 1rem 0;
+        word-spacing:1px;
+        letter-spacing: 0.4px;
+    }
+
     #logo-cont{
         margin-left: 1rem;
         margin-top: 1rem;
@@ -367,6 +386,20 @@ body{
 }
 
 @media only screen and (max-width: 790px) {
+
+
+
+     #side-img-cont{
+        display: none;
+    }
+    #home-description{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 
     #logo-img{
         width: 22vw;
